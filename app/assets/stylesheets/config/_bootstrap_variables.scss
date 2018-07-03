@@ -8,6 +8,17 @@ $font-family-sans-serif:  $body-font;
 $headings-font-family:    $headers-font;
 $body-bg:                 $light-gray;
 $font-size-base: 18px;
+$btn-font:                $headers-font;
+$text-color:              $black;
+
+// Fonts
+$font-size-h1: floor(($font-size-base * 4)) !default; // ~72px
+$font-size-h2: floor(($font-size-base * 3)) !default; // ~54px
+$font-size-h3: floor(($font-size-base * 2)) !default; // ~36px
+$font-size-h4: floor(($font-size-base * 1)) !default; // ~18px // H4 == p
+
+$font-size-h5: floor(($font-size-base * 0.8)) !default; // ~14px
+
 
 // Colors
 $gray-base:       $gray;

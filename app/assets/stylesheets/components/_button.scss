@@ -1,0 +1,44 @@
+.btn-rounded-gray {
+  color: $white;
+  border: 1px solid $medium-gray;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 1;
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+.btn-rounded-yellow {
+  color: $white;
+  border: 1px solid $yellow;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 1;
+  background-color: $yellow;
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+
+.btn-square-blue {
+  color: $white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: $blue;
+  transition: background 0.3s ease;
+  opacity: 1;
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+/* Build your own button classes ! */
