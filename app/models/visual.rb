@@ -1,7 +1,7 @@
 class Visual < ApplicationRecord
-  belongs_to :activity, dependent: :destroy
-  belongs_to :country, dependent: :destroy
+  belongs_to :activity
+  belongs_to :country
 
-  validates :name, presence :true
+  validates :name, presence: true
 
 end

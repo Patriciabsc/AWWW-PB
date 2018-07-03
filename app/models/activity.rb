@@ -1,6 +1,6 @@
 class Activity < ApplicationRecord
-  has_many :visuals, dependent: :destroy
+  has_many :visuals
   belongs_to :country
 
-  validates :name, presence :true
+  validates :name, presence: true
 end
