@@ -15,24 +15,27 @@ ActiveRecord::Schema.define(version: 2018_07_04_123748) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "activities", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.text "quick_facts"
-    t.string "host"
-    t.bigint "country_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["country_id"], name: "index_activities_on_country_id"
-  end
-
   create_table "countries", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.text "quick_facts"
+    t.text "country_pic_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "zone"
+  end
+
+  create_table "travels", force: :cascade do |t|
+    t.string "name"
+    t.string "author"
+    t.text "description"
+    t.text "quick_facts"
+    t.text "recommendations"
+    t.text "travel_pic_url"
+    t.bigint "country_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_travels_on_country_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -55,14 +58,16 @@ ActiveRecord::Schema.define(version: 2018_07_04_123748) do
   create_table "visuals", force: :cascade do |t|
     t.string "name"
     t.string "author"
+    t.text "description"
+    t.string "location"
     t.bigint "country_id"
-    t.bigint "activity_id"
+    t.bigint "travel_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "visual_url"
     t.string "country"
-    t.index ["activity_id"], name: "index_visuals_on_activity_id"
     t.index ["country_id"], name: "index_visuals_on_country_id"
+    t.index ["travel_id"], name: "index_visuals_on_travel_id"
   end
 
 end

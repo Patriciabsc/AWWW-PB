@@ -1,4 +1,4 @@
-class Activity < ApplicationRecord
+class Travel < ApplicationRecord
   has_many :visuals
   belongs_to :country
 

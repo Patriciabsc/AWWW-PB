@@ -3,8 +3,10 @@ class CreateVisuals < ActiveRecord::Migration[5.2]
     create_table :visuals do |t|
       t.string :name
       t.string :author
+      t.text :description
+      t.string :location
       t.references :country
-      t.references :activity
+      t.references :travel
 
       t.timestamps
     end
