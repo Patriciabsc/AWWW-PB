@@ -1,2 +1,17 @@
-<h1>Countries#show</h1>
-<p>Find me in app/views/countries/show.html.erb</p>
+<div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://source.unsplash.com/featured/?<%= @country.name %>');">
+  <div class="banner-content">
+    <h1>Welcome to <%= @country.name %></h1>
+  </div>
+</div>
+
+<div class="content">
+  <% @country.visuals.last(4).each do |visual| %>
+    <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), url('<%= visual.visual_url %>');">
+      <div class="banner-content-square">
+        <h3><%= visual.name %></h3>
+        <div class="dash"></div>
+        <p><%= visual.author.nil? ? "A discreet traveler" : visual.author.capitalize %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
