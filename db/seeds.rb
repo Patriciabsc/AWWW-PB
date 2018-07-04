@@ -32,7 +32,7 @@ visual_3 = Visual.create!(name: 'Lembeh Visual', country_id: 1, activity_id: 3, 
 visual_4 = Visual.create!(name: 'Batur Visual', country_id: 1, activity_id: 4, visual_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mount_batur_and_lake.jpg/1200px-Mount_batur_and_lake.jpg')
 
 visual_5 = Visual.create!(name: 'Greece Visual', country_id: 2, activity_id: 5, visual_url: 'https://www.slh.com/globalassets/country-pages/hero-images/greece2.jpg')
-visual_6 = Visual.create!(name: 'Athens Visual', country_id: 2, activity_id: 6, visual_url: 'https://www.blocal-travel.com/wp-content/uploads/2015/01/ino-2Bstreet-2Bart-2Bathens-2Bexarchia-2B-3-.jpg')
-visual_7 = Visual.create!(name: 'Ios Visual', country_id: 2, activity_id: 7, visual_url: 'http://www.travelling.gr/wp-content/uploads/2014/08/Melissani-cave-3.jpg')
+visual_6 = Visual.create!(name: 'Athens Visual', country_id: 2, activity_id: 6, visual_url: 'https://images.unsplash.com/photo-1517540784566-44b5dfbf4677?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a6f71f7af66399863f25f4767582eaec&auto=format&fit=crop&w=1350&q=80')
+visual_7 = Visual.create!(name: 'Ios Visual', country_id: 2, activity_id: 7, visual_url: 'https://images.unsplash.com/photo-1527253959891-c6a0df70a77e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=40f3c40e3e453705de6797bb10527511&auto=format&fit=crop&w=1350&q=80')
 
 puts 'Finished!'

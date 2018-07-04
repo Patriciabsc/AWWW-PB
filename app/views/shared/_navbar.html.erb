@@ -7,11 +7,14 @@
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <% if user_signed_in? %>
+      <!-- Links when logged in OR logged out -->
 
-      <!-- Links when logged in -->
+      <%= link_to "Trending", root_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Destinations", countries_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Travelers", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "About", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+
+    <% if user_signed_in? %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
@@ -38,10 +41,6 @@
       </div>
     <% else %>
 
-      <!-- Links when logged out -->
-      <%= link_to "Destinations", countries_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Travelers", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-
       <!-- Login link (when logged out) -->
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
@@ -52,8 +51,10 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Trending</a></li>
         <li><a href="#">Destinations</a></li>
         <li><a href="#">Travelers</a></li>
+        <li><a href="#">About</a></li>
       </ul>
     </div>
   </div>

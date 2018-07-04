@@ -24,7 +24,7 @@
 .banner-small {
   color: white;
   text-align: center;
-  height: 50vh;
+  height: 70vh;
   background-size: cover !important;
   display: flex;
   align-items: center;
@@ -36,4 +36,21 @@
 .banner-small h1 {
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.banner-content-square {
+  border: 1px solid $medium-gray;
+  background-color: $white;
+  opacity: 0.6;
+  color: $black;
+  padding: 20px;
+  border-radius: 2%;
+}
+
+.dash {
+    width: 10%;
+    height: 2px;
+    background: $black;
+    margin-left: 45%;
+    margin-bottom: 10px;
 }
