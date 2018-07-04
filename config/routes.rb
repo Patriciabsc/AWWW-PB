@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'travels/show'
   get 'visuals/index'
   get 'visuals/show'
   get 'countries/show'
@@ -9,8 +10,11 @@ Rails.application.routes.draw do
 
   resources :countries, only: [:show, :index] do
     resources :visuals, only: [:show, :index]
+    resources :travels, only: [:show, :index]
   end
 
   resources :visuals, only: [:show]
+
+  resources :travels, only: [:show]
 
 end
