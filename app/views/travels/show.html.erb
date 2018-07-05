@@ -8,12 +8,11 @@
 
 <div class="container">
 
-
   <div class="row">
     <div class="description-quick-facts">
       <div class="col-xs-12 col-md-7">
         <div class="description">
-          <h2>Details of this exploration</h1>
+          <h2>Details of this exploration</h2>
           <p> <%= @travel.description %> </p>
         </div>
       </div>
@@ -42,4 +41,17 @@
       </div>
     </div>
   </div>
+
+  <div class="row visuals">
+    <% @travel.visuals.each do |visual| %>
+      <div class="col-xs-12 col-md-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= visual.visual_url %>');">
+          <div class="card-hidden-description">
+            <p><%= visual.description %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
 </div>
