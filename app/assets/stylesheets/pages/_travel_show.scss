@@ -1,0 +1,35 @@
+.description-quick-facts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description {
+  // width: 60%;
+  padding: 20px;
+  margin: 20px;
+}
+
+.quick-facts {
+  // width: 40%;
+  border: 2px solid $blue;
+  border-shadow: 0px 1px $gray;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.tag {
+  text-align: center;
+  margin-left: 30px;
+
+  p {
+    margin-top: 10px;
+  }
+}
