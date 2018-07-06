@@ -11,11 +11,11 @@
 
 .quick-facts {
   // width: 40%;
-  border: 2px solid $blue;
-  border-shadow: 0px 1px $gray;
+  border: 1px solid $gray;
+  border-shadow: 2px 2px $gray;
   border-radius: 5px;
   padding: 20px;
-  margin: 20px;
+  margin: 20px 10px 20px 20px;
   text-align: center;
 }
 
@@ -33,3 +33,6 @@
     margin-top: 10px;
   }
 }
+
+
+
