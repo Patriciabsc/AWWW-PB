@@ -36,7 +36,7 @@ travel_7 = Travel.create!(name: 'Cave Diving in Ios', description: 'Exploring ca
 puts 'Creating visuals...'
 visual_1 = Visual.create!(name: 'Indonesia Visual',
                           description: 'Temples are a must do especially in Bali with a good 2 days to dedicate to touring them! Ideally on a bike to take the time!',
-                          location: 'Bali',
+                          location: 'Bali, Indonesia',
                           country_id: 1,
                           travel_id: 1,
                           visual_url: 'https://images.unsplash.com/photo-1513415756790-2ac1db1297d0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=196fe886912aad8b7b1b302d31e14c2f&auto=format&fit=crop&w=1267&q=80')
@@ -51,19 +51,19 @@ visual_7 = Visual.create!(name: 'Ios Visual', country_id: 2, travel_id: 7, visua
 
 visual_8 = Visual.create!(name: 'Ubud rice fields',
                           description: 'Ubud is surrounded by beautiful rice-fields to be explored!',
-                          location: 'Bali',
+                          location: 'Bali, Indonesia',
                           country_id: 1,
                           travel_id: 1,
                           visual_url: 'https://images.unsplash.com/photo-1475332831881-e80974377cb7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=872a19513fe495bacc3c0f60faa42e15&auto=format&fit=crop&w=1444&q=80')
 visual_9 = Visual.create!(name: 'Gili',
                           description: 'The three gili islands offer a diversity of calm, fun, amazing snorkling that you cannot miss!',
-                          location: 'Gili Island',
+                          location: 'Gili Island, Indonesia',
                           country_id: 1,
                           travel_id: 1,
                           visual_url: 'https://unsplash.com/photos/sb2DvfqUtEQ')
 visual_10 = Visual.create!(name: 'Nusa Lembongan & Mantas',
                           description: 'The quiet island of Nusa Lembongan is great to relax and snorkle and scuba dive with mantas and molamolas! ',
-                          location: 'Nusa Lembongan',
+                          location: 'Nusa Lembongan, Indonesia',
                           country_id: 1,
                           travel_id: 1,
                           visual_url: 'https://images.unsplash.com/photo-1501963422762-3d89bd989568?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cbe03a75314483f7014394efedb04812&auto=format&fit=crop&w=1350&q=80')

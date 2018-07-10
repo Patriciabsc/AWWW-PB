@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_04_123748) do
+ActiveRecord::Schema.define(version: 2018_07_10_130327) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,6 +66,8 @@ ActiveRecord::Schema.define(version: 2018_07_04_123748) do
     t.datetime "updated_at", null: false
     t.text "visual_url"
     t.string "country"
+    t.float "latitude"
+    t.float "longitude"
     t.index ["country_id"], name: "index_visuals_on_country_id"
     t.index ["travel_id"], name: "index_visuals_on_travel_id"
   end
