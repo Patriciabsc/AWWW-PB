@@ -42,7 +42,9 @@
     </div>
   </div>
 
+
   <div class="row visuals">
+    <h2>Experiences</h2>
     <% @travel.visuals.each do |visual| %>
       <div class="col-xs-12 col-md-4">
         <div class="card hover-description" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= visual.visual_url %>');">
@@ -55,6 +57,16 @@
         </div>
       </div>
     <% end %>
+  </div>
+
+  <div class="map">
+    <h2>Travel's map</h2>
+
+  </div>
+
+  <div class="recommendations">
+    <h2>Our preferred places</h2>
+
   </div>
 
 </div>
