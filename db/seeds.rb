@@ -21,7 +21,7 @@ travel_1 = Travel.create!(name: 'Discover Indonesia',
                           author: 'Patricia Bernasconi',
                           description: 'The grand tour spending 3 weeks in the touristic Indonesia. Having been 3 times to Indonesia I still highly recommend this itinerary for first timers to discover the main touristic points.',
                           duration: '3 weeks',
-                          tags: ['nature', 'beach', 'volcano', 'yoga', 'diving', 'culture'],
+                          tags: 'nature, beach',
                           recommendations: {food: 'AAA', hotel: 'BBB', beach: 'CCC', activity: 'DDD'},
                           travel_pic_url: 'https://images.unsplash.com/photo-1513415756790-2ac1db1297d0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=196fe886912aad8b7b1b302d31e14c2f&auto=format&fit=crop&w=1267&q=80'
                          )

@@ -23,20 +23,14 @@
           <div class="tags">
             <div class="tag">
               <%= image_tag "duration.png", class: "tag-avatar" %>
-              <p>3 weeks</p>
+              <p><%= @travel.duration %></p>
             </div>
-            <div class="tag">
-              <%= image_tag "nature.png", class: "tag-avatar" %>
-              <p>nature</p>
-            </div>
-            <div class="tag">
-              <%= image_tag "mustdo.png", class: "tag-avatar" %>
-              <p>must do</p>
-            </div>
-            <div class="tag">
-              <%= image_tag "beach.png", class: "tag-avatar" %>
-              <p>beach</p>
-            </div>
+            <% @travel.tags.split(", ").each do |tag| %>
+              <div class="tag">
+              <%= image_tag "#{tag}.png", class: "tag-avatar" %>
+                <p><%= tag %></p>
+              </div>
+            <% end %>
           </div>
         </div>
       </div>
