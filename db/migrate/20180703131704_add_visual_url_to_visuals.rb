@@ -3,3 +3,4 @@ class AddVisualUrlToVisuals < ActiveRecord::Migration[5.2]
     add_column :visuals, :visual_url, :text
   end
 end
+

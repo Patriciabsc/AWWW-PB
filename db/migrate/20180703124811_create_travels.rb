@@ -4,7 +4,8 @@ class CreateTravels < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :author
       t.text :description
-      t.text :quick_facts
+      t.text :tags
+      t.string :duration
       t.text :recommendations
       t.text :travel_pic_url
       t.references :country

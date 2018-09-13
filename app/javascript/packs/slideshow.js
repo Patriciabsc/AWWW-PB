@@ -1,6 +1,6 @@
 
-function slideShow {
-   var visualIndex = 1;
+/* function slideShow {
+  var visualIndex = 1;
   showVisuals(visualIndex);
 
   // Next/previous controls
@@ -31,6 +31,7 @@ function slideShow {
 }
 
 export { slideShow };
+*/
 
 
 
