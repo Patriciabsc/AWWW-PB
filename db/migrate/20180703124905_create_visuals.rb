@@ -7,6 +7,7 @@ class CreateVisuals < ActiveRecord::Migration[5.2]
       # t.string :location
       t.references :country
       t.references :travel
+      t.references :user
 
       t.timestamps
     end

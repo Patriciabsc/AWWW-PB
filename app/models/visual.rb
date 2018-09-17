@@ -1,6 +1,8 @@
 class Visual < ApplicationRecord
   belongs_to :travel
   belongs_to :country
+  belongs_to :user
+
 
   validates :name, presence: true
 

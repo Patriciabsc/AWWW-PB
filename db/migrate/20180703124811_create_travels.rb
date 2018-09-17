@@ -9,6 +9,7 @@ class CreateTravels < ActiveRecord::Migration[5.2]
       t.text :recommendations
       t.text :travel_pic_url
       t.references :country
+      t.references :user
 
       t.timestamps
     end
