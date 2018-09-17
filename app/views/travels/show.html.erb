@@ -25,11 +25,13 @@
               <%= image_tag "duration.png", class: "tag-avatar" %>
               <p><%= @travel.duration %></p>
             </div>
-            <% @travel.tags.split(", ").each do |tag| %>
-              <div class="tag">
-              <%= image_tag "#{tag}.png", class: "tag-avatar" %>
-                <p><%= tag %></p>
-              </div>
+            <% if @travel.tags %>
+              <% @travel.tags.split(", ").each do |tag| %>
+                <div class="tag">
+                <%= image_tag "#{tag}.png", class: "tag-avatar" %>
+                  <p><%= tag %></p>
+                </div>
+              <% end %>
             <% end %>
           </div>
         </div>
