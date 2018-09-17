@@ -16,4 +16,12 @@ ActiveAdmin.register Visual do
     f.actions
   end
 
+  index do
+    column :id
+    column :name
+    column :author
+    column :country
+    column :travel
+    actions
+  end
 end
