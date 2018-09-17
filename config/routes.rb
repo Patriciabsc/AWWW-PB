@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
   get 'travels/show'
   get 'visuals/index'
   get 'visuals/show'

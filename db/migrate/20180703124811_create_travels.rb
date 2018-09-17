@@ -6,9 +6,9 @@ class CreateTravels < ActiveRecord::Migration[5.2]
       t.text :description
       t.text :tags
       t.string :duration
-      t.text :recommendations
       t.text :travel_pic_url
-      t.references :country
+      t.references :country, foreign_key: true
+      t.references :user, foreign_key: true
 
       t.timestamps
     end
