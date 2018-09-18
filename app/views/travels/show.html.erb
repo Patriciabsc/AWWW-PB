@@ -1,9 +1,10 @@
 
 <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), url('<%= @travel.travel_pic_url %>');">
   <div class="banner-content">
-    <h1> <%= @travel.country.name %></h1>
+    <h1> <%= @travel.name %></h1>
     <div class="dash-big"></div>
-    <h3>By <%= @travel.author.nil? ? "a discreet traveler" : @travel.author.capitalize %></h3>
+    <h3>By <%= @travel.author.nil? ? "a discreet traveler" : @travel.author.capitalize %> in <%= @travel.country.name %></h3>
+
   </div>
 </div>
 

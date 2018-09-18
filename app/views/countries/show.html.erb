@@ -8,7 +8,7 @@
   <% @country.travels.last(4).each do |travel| %>
     <div class="banner-small" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), url('<%= travel.visuals.first.visual_url %>');">
       <div class="banner-content-square">
-        <a class="banner-small-link" href="/travels/<%= travel.id %>" ></a>
+        <a class="banner-small-link" href="/travels/<%= "#{travel.id}-#{travel.name.parameterize}" %>" ></a>
         <h3><%= travel.name %></h3>
         <div class="dash"></div>
         <p><%= travel.author.nil? ? "A discreet traveler" : travel.author.capitalize %></p>

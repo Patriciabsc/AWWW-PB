@@ -6,5 +6,8 @@ class Country < ApplicationRecord
 
   accepts_nested_attributes_for :travels
 
+  def to_param
+    "#{id}-#{name.parameterize}"
+  end
 
 end

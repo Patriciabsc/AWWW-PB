@@ -8,7 +8,7 @@ class Travel < ApplicationRecord
 
 
   def to_param
-    [id, name.parameterize].join("-")
+    "#{id}-#{name.parameterize}"
   end
 
 end
