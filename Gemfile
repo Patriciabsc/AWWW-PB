@@ -20,7 +20,7 @@ gem 'webpacker'
 gem 'geocoder'
 
 
-gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'activeadmin', '~> 1.3', '>= 1.3.1'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 group :development do
