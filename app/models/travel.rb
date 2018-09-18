@@ -5,4 +5,10 @@ class Travel < ApplicationRecord
 
   validates :name, presence: true
   validates :description, presence: true
+
+
+  def to_param
+    [id, name.parameterize].join("-")
+  end
+
 end
